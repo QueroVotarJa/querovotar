@@ -11,14 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome, id: :post_nome %>
-  </div>
+  <div class="name-state">
+    <div class="field">
+      <%= form.label :nome %>
+      <%= form.text_field :nome, id: :post_nome %>
+    </div>
 
-  <div class="field">
-    <%= form.label :estado %>
-    <%= form.text_field :estado, id: :post_estado %>
+    <div class="field">
+      <%= form.label :estado %>
+      <%= form.text_field :estado, id: :post_estado %>
+    </div>
   </div>
 
   <div class="field">
