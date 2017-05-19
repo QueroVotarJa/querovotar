@@ -1,24 +1,17 @@
-# README
+# How to run
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Install docker (Mac)
 
-Things you may want to cover:
+brew install docker
 
-* Ruby version
+## Run the environment
 
-* System dependencies
+docker-compose up --build
 
-* Configuration
+## Stop the environment
 
-* Database creation
+docker-compose stop
 
-* Database initialization
+## Access bash
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+docker-compose exec web bash
