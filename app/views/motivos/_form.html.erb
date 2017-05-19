@@ -1,0 +1,32 @@
+<%= form_with(model: motivo, local: true) do |form| %>
+  <% if motivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(motivo.errors.count, "error") %> prohibited this motivo from being saved:</h2>
+
+      <ul>
+      <% motivo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :motivo_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado, id: :motivo_estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porque %>
+    <%= form.text_area :porque, id: :motivo_porque %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
